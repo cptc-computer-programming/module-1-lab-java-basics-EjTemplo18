@@ -5,6 +5,9 @@ public class AirlineApp {
 
     // TODO: Write a main method that calls runCheckIn().
 
+        public static void main(String[] args) {
+        runCheckIn();
+    }
     // TODO: Implement runCheckIn() so it prints the required output EXACTLY.
     // Rules:
     // - Use println for each line.
@@ -12,5 +15,11 @@ public class AirlineApp {
     // - At least TWO steps must be done by calling methods in OTHER classes.
     public static void runCheckIn() {
         // Your code here
-    }
+        System.out.println(AirlineMessages.TITLE);
+        System.out.println(AirlineMessages.START);
+        BoardingPass.generate();
+        CheckInWorkflow.enterPassengerDetails();
+        CheckInWorkflow.selectSeat();
+        System.out.println(AirlineMessages.DONE);
+        }
 }

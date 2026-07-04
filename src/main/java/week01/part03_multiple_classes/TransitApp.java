@@ -21,5 +21,25 @@ public class TransitApp {
     // Trip in progress.
     public static void startTrip() {
         // Your code here
+        System.out.println("Trip started.");
+        stationEnter();
+        ticketScan();
+        trainDepart();
+        System.out.println("Trip in progress.");
+    }
+        
+    public static void stationEnter() {
+        // Your code here
+        System.out.println("Entered station.");
+    }
+        
+    public static void ticketScan() {
+        // Your code here
+        System.out.println("Ticket scanned.");
+    }
+        
+    public static void trainDepart() {
+        // Your code here
+        System.out.println("Train departing");
     }
 }
