@@ -14,5 +14,9 @@ public class MultiLineMessage {
     // - notebook
     public static void printChecklist() {
         // Your code here
+        System.out.println("Checklist:");
+        System.out.println("- backpack");
+        System.out.println("- water bottle");
+        System.out.println("- notebook");
     }
 }
