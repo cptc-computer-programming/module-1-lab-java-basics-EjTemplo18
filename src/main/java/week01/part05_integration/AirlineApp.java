@@ -17,5 +17,9 @@ public class AirlineApp {
         // Your code here
         System.out.println(AirlineMessages.TITLE);
         System.out.println(AirlineMessages.START);
-    }
+        BoardingPass.generate();
+        CheckInWorkflow.enterPassengerDetails();
+        CheckInWorkflow.selectSeat();
+        System.out.println(AirlineMessages.DONE);
+        }
 }
